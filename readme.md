@@ -1,3 +1,4 @@
+# Iniciando o Projeto #
 1.  yarn init -y     ..................... cria o package.json
 2.  yarn add typescript -D    ............ cria node_modules e yarn.lock
 3.  yarn tsc --init    ................... cria tsconfig.json
@@ -32,7 +33,7 @@
 
 11. criar repositório github (growdev-scrapbook-api)
 
-# Primeira Vez
+# Primeira Vez #
 12. git init
 
 13. git add .
@@ -43,11 +44,12 @@
 
 16. git push ( pegar comando completo na mensagem )
 
-# Demais Vezes
+# Demais Vezes #
 17. git add .
 
 18. git commit -m "mensagem aqui"
 
 19. git push
 
+# HEROKU #
 
