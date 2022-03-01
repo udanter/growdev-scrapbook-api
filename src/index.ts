@@ -7,14 +7,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cors());
 
-app.get('/', (Request: Request, Response: Response) => {
-    return Response.send('Hello World!');
+app.get('/', (req: Request, res: Response) => {
+    return res.send('Hello World!');
 });
 
+const port = process.env.PORT || 3333;
 
-
-const port = process.env.PORT || 8080;
-
-app.listen(8080, () => {
+app.listen(3333, () => {
     console.log('API Rodando na Porta 8080');
 });
