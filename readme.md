@@ -51,5 +51,31 @@
 
 19. git push
 
-# HEROKU #
+# HEROKU # após criar usuário #
+20. Create New App ou New
+
+21. App name ( nome único )
+    Choose Region ( United States )
+    Create App ( clicar no botão )
+
+22. Tela de Deploy ( onde envia os códigos github p o heroku )
+
+23. Conectar ao Github
+    Escolha o repositório através de "Search" e clique em "Connect"
+
+24. Tela de Settings
+    Add buildpack "clique para escolher o tipo de buildpack" 
+    Escolha " nodejs "  e " Save changes " 
+
+25. Tela de Deploy
+    clique em " Deploy Branch " para realizar o deploy
+    deverá aparecer a seguinte mensagem na tela:
+    * Receive code from GitHub: ok
+    * Build master: ok
+    * Release phase: ok
+    * Deploy to Heroku: ok
+    
+
+
+
 
