@@ -14,6 +14,6 @@ app.get('/', (req: Request, res: Response) => {
 const port = process.env.PORT || 3333;
 
 app.listen(3333, () => {
-    console.log('API Rodando na Porta 8080');
+    console.log('API Rodando na Porta 3333');
 });
 
