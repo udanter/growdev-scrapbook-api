@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/button.css" />
+    <link rel="stylesheet" href="css/records.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <script src="main.js" defer></script>
+
+    <title>CRUD Uiliam</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="header-title">Lista de Recados Uiliam</h1>
+    </header>
+    <main>
+      <button type="button" class="button blue mobile" id="cadastrarCliente">
+        Cadastrar Recado
+      </button>
+      <table id="tableClient" class="records">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th>Celular</th>
+            <th>Recado</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <header class="modal-header">
+            <h2>Novo Recado</h2>
+            <span class="modal-close" id="modalClose">&#10006;</span>
+          </header>
+          <form id="form" class="modal-form">
+            <input
+              type="text"
+              id="nome"
+              data-index="new"
+              class="modal-field"
+              placeholder="Nome do Colaborador"
+              required
+            />
+            <input
+              type="email"
+              id="email"
+              class="modal-field"
+              placeholder="e-mail do Colaborador"
+              required
+            />
+            <input
+              type="text"
+              id="celular"
+              class="modal-field"
+              placeholder="Celular do Colaborador"
+              required
+            />
+            <input
+              type="text"
+              id="recado"
+              class="modal-field"
+              placeholder="Recado do Colaborador"
+              required
+            />
+          </form>
+          <footer class="modal-footer">
+            <button id="salvar" class="button green">Salvar</button>
+            <button id="cancelar" class="button blue">Cancelar</button>
+          </footer>
+        </div>
+      </div>
+    </main>
+    <footer>Copyright &copy;udanters</footer>
+  </body>
+</html>
